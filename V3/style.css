@@ -1,0 +1,73 @@
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css';
+
+/* Applique la boîte de dimensionnement à tous les éléments */
+* {
+  box-sizing: border-box;
+}
+
+/* Style du corps de la page */
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 5px;
+}
+
+/* Styles pour les titres de différents niveaux */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+h1 { font-size: 22px; }
+h2 { font-size: 20px; }
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+h5 { font-size: 14px; }
+h6 { font-size: 12px; }
+
+/* Style pour les étiquettes */
+label {
+  display: block;
+  margin: 5px 0;
+}
+
+/* Style pour les tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Style pour les cellules de table */
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+th {
+  text-align: center;
+}
+
+td {
+  padding: 2px 40px 2px 2px;
+}
+
+/* Style pour les produits non en stock */
+.not-in-stock {
+  color: red;
+}
+
+/* Couleurs alternées pour les lignes du corps de la table */
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+/* Définit une largeur fixe pour la colonne des noms */
+td.name-column {
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
